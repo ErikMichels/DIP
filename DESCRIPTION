@@ -1,0 +1,25 @@
+Package: DIP
+Type: Package
+Title: Dysregulated Immune profile
+Version: 0.0.0.9000
+Authors@R: person("E.H.A. Michels", email = "e.h.michels@amsterdamumc.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8145-2444"))
+Description: This machine-learning framework comprises two independent machine-learning models that predict the degree of host response dysregulation using 3 plasma biomarkers in absolute concentrations: sTREM-1, Procalcitonin, and Interleukin-6. The function expects a data frame containing the columns 'ID', 'TREM_1', 'IL_6', and 'Procalcitonin'. Each should be numeric, untransformed, and unscaled in pg/ml. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends:
+    reticulate,
+    plotly,
+    ggplot2,
+    stats,
+    utils,
+    mice,
+    xgboost,
+    ggbeeswarm
+
+
+
+
+
+
