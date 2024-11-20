@@ -119,7 +119,7 @@ cDIP <- function(new_data) {
     theme(panel.border = element_blank()) +
     theme(axis.line.x = element_line(colour = "black"),
           axis.line.y = element_line(colour = "black"))
-  print(p)
+  suppressWarnings(print(p))
 
   # Save results to the global environment
   assign("cDIP_results", results_df, envir = .GlobalEnv)
